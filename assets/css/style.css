@@ -38,13 +38,17 @@ footer {
     "footer social";
 }
 
+/*HEADER*/
+
 .contenedor-header {
-   background-color: black;
-   padding: 1rem;
+ width: 100%;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
 }
 
 .logo {
-width: 100%;
+width: 150px;
 }
 
 .contenedor-nav {
@@ -56,21 +60,49 @@ width: 100%;
 .nav-list {
     display: flex;
     list-style: none;
-    text-decoration: none;
-    text-decoration: none ;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
     text-align: center;
-    font-style:normal
+    font-style:normal;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    padding: 10px;
+    font-size: 1rem;
+    font-style: none;
 }
 
-.nav-list li {
-font-family: "Roboto Condensed", sans-serif;
-padding: 10px;
-color: black;
+
+
+
+/*ASIDE*/  
+
+.contenedor-aside {
+height: 100vh;
 }
 
-.nav-list li:hover {
-    background-color: #FFF2B3 ;
-    padding: 10px 15px 10px 15px;
-    border-radius: 15px;
-    }
+.contenido-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-aside h2 {
+display:flex;
+justify-content: center;
+font-family: 'Montserrat', sans-serif;
+padding: 20px;
+font-size: 1rem;
+text-align: center;
+}
+
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.category {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
