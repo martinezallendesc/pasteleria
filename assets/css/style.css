@@ -49,7 +49,14 @@ footer {
 
 .logo {
 width: 150px;
+transform: rotate(0deg);
+transition: transform 1s;
 }
+
+.logo:hover {
+    width: 150px;
+    transform: rotate(270deg);
+    }
 
 .contenedor-nav {
     display:flex;
@@ -73,6 +80,9 @@ width: 150px;
     justify-content: center;
 }
 
+.contenedor-ul i {
+    display: none;
+}
 
 .nav-list {
     display: flex;
@@ -94,6 +104,8 @@ padding: 20px;
     color: #FF7EC4;
     }
 
+   
+
 /*Oferta de la semana*/
 
 .oferta-week {
@@ -104,7 +116,18 @@ padding: 20px;
     margin-right: 30px;
     padding: 10px;
     background-color: #FFFAEF;
+    animation: destacado 3s ease-in infinite;
 
+}
+
+@keyframes destacado {
+    from {
+        background-color: #FFFAEF;
+}
+to {
+    background-color: aquamarine;
+   
+}
 }
 
 .oferta-week i {
@@ -173,6 +196,7 @@ min-height: 100vh;
     /*border: 0.5px #000000 solid;*/
     background-color: #FFF4FA ;
     gap: 10px;
+    transition: background-color 1s ease-in;
 }
 
 .category:hover {
@@ -182,6 +206,7 @@ min-height: 100vh;
 .category i {
     font-size: 2rem;
     color: #FF7EC4;
+    transition: font-size 0.5s ease-in;
 }
 
 .category i:hover {
@@ -194,6 +219,7 @@ min-height: 100vh;
     color: #000000;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    transition: padding 1s ease;
 }
 
 .category p:hover {
@@ -268,6 +294,7 @@ font-size: 1rem;
     border-radius: 15px;
     padding: 5px;
     border: none;
+    transition: all 3s;
 }
 
 .metadatos button:hover {
@@ -331,6 +358,11 @@ grid-template-areas:
     width: 100%; 
     padding: 0;
     margin: 0;
+    transition: transform 2s;
+}
+
+.logo-container img:hover {
+    transform: rotate(45deg);
 }
 
 .contenedor-ul {
